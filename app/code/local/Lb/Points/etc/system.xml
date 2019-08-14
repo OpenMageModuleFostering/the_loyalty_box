@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<config>
+    <tabs>
+        <mycustom_tab module="points" translate="label">
+            <label>Loyalty Box</label>
+            <sort_order>100</sort_order>
+        </mycustom_tab>
+    </tabs>
+    <sections>
+        <lbconfig_section module="points" translate="label">
+            <label>Loyalty Box Settings</label>
+            <sort_order>200</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <tab>mycustom_tab</tab>
+            <groups>
+                <lb_settings_group translate="label">
+                    <label>Loyalty Box API Configuration</label>
+                    <comment>Configure your api details to access Loyalty Box. (All fields are mandatory.)</comment>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <reward_programme_name_field translate="label tooltip">
+                            <backend_model>lbpoints/programname</backend_model> 
+                            <label>Reward Program Name</label>
+                            <tooltip>Please enter your Reward Program Name here.</tooltip>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </reward_programme_name_field>
+                        <client_id_field translate="label tooltip">
+                            <backend_model>lbpoints/clientid</backend_model> 
+                            <label>Client Id</label>
+                            <tooltip>Please enter your Client Id here.</tooltip>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </client_id_field>
+                        <location_id_field translate="label tooltip">
+                            <backend_model>lbpoints/locationid</backend_model> 
+                            <label>Location Id</label>
+                            <tooltip>Please enter your Location Id here.</tooltip>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </location_id_field>
+                        <api_username_field translate="label tooltip">
+                            <backend_model>lbpoints/apiusername</backend_model> 
+                            <label>API Username</label>
+                            <tooltip>Please enter your API Username here.</tooltip>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </api_username_field>
+                        <api_password_field translate="label tooltip">
+                            <backend_model>lbpoints/apipassword</backend_model> 
+                            <label>API Password</label>
+                            <tooltip>Please enter your API Password here.</tooltip>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>password</frontend_type>
+                        </api_password_field>
+                        <friendly_message_field translate="label tooltip">
+                            <backend_model>lbpoints/registrationmessage</backend_model> 
+                            <label>Registration Completed Message</label>
+                            <tooltip>Please enter your Registration Completed Message here.</tooltip>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_type>text</frontend_type>
+                        </friendly_message_field>
+                    </fields>
+                </lb_settings_group>
+            </groups>
+        </lbconfig_section>
+    </sections>
+</config>
