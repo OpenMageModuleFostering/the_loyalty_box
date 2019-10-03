@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/The_Loyalty_Box",
+    "name": "OpenMageModuleFostering\/The_Loyalty_Box",
     "type": "magento-module",
     "license": "MITL",
     "homepage": "",
     "description": "Providing customer loyalty programs, ensuring that your existing customers keep coming back. Programs are flexible and can be set up to suit your needs",
     "authors": [
-    {
-        "name": "Double-eye",
-        "email": "loyaltybox.support@double-eye.com"
-    }
-],
+        {
+            "name": "Double-eye",
+            "email": "loyaltybox.support@double-eye.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
